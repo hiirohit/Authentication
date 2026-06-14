@@ -1,3 +1,3 @@
 export const AppConstants ={
-        BACKEND_URL: 'https://authentication-system-pa0y.onrender.com',
+        BACKEND_URL: import.meta.env.VITE_BACKEND_URL,
 }
