@@ -39,11 +39,11 @@ function MenuBar() {
 
   const sendVerificationOtp = async () => {
     try{
-      const response = await axios.post(backend_url+"/send-otp");
+      const response = await axios.post(backend_url+"/send-otp",{withCredentials:true});
     if(response.status === 200){
       navigate("/email-verify");
       toast.success("OTP has been sent successfully.");
-
+      
     }else{
       toast.error("Unable to sent OTP!");
     }
