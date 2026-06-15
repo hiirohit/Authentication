@@ -39,11 +39,11 @@ function MenuBar() {
 
   const sendVerificationOtp = async () => {
     try{
-      const response = await axios.post(backend_url+"/send-otp",{withCredentials:true});
+      const response = await axios.post(backend_url+"/send-otp");
     if(response.status === 200){
       navigate("/email-verify");
       toast.success("OTP has been sent successfully.");
-      
+
     }else{
       toast.error("Unable to sent OTP!");
     }
@@ -68,7 +68,7 @@ function MenuBar() {
                       userSelect:"none",
                     }} 
                     onClick={() => setdropDownOpen((prev) => !prev)}> 
-                    
+                    {/* RightSide Name Logo Char based on index      */}
                     {userData.name[0].toUpperCase()} 
               </div>
               {dropDownOpen && (
