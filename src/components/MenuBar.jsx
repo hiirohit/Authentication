@@ -68,7 +68,7 @@ function MenuBar() {
                       userSelect:"none",
                     }} 
                     onClick={() => setdropDownOpen((prev) => !prev)}> 
-                    {/* RightSide Name Logo Char based on index      */}
+                    
                     {userData.name[0].toUpperCase()} 
               </div>
               {dropDownOpen && (
