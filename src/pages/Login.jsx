@@ -54,7 +54,7 @@ function Login() {
       style={{ background: "linear-gradient(90deg, #6a5af9, #8268f9", border: "none" }}>
       <div className="position-absolute top-0 start-0 p-3 p-md-4">
         <Link to="/" className="d-flex align-items-center gap-2 text-decoration-none">
-          <img src={assets.logo_home} alt='logo' width={32} height={32} />
+          <img src={assets.logo} alt='logo' width={32} height={32} />
           <span className='fw-bold fs-4 text-light'>Authify</span>
         </Link>
       </div>
